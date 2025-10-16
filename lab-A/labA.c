@@ -15,12 +15,15 @@ int read_word(FILE* file, char* buffer) {
     int c;
     int index = 0;
 
-    while ((c = fgetc(file)) != EOF && !isalpha(c));
+    while ((c = fgetc(file)) != EOF && !isalpha(c))
+        ;
 
-    if (c == EOF) return 0;
+    if (c == EOF)
+        return 0;
 
     buffer[index++] = tolower(c);
-    while ((c = fgetc(file)) != EOF && isalpha(c) && index < MAX_WORD_LENGTH - 1) {
+    while ((c = fgetc(file)) != EOF && isalpha(c) &&
+        index < MAX_WORD_LENGTH - 1) {
         buffer[index++] = tolower(c);
     }
     buffer[index] = '\0';
@@ -29,7 +32,6 @@ int read_word(FILE* file, char* buffer) {
 }
 
 void insert_sorted(WordInfo* words, int* count, const char* new_word) {
-    
 
     WordInfo new_word_info;
     strcpy(new_word_info.word, new_word);
@@ -126,6 +128,6 @@ int main() {
 
     int N3;
     scanf("%i", &N3);
-    
+
     return 0;
 }
