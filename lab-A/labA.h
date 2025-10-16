@@ -1,17 +1,16 @@
 #ifndef LAB_A_H
 #define LAB_A_H
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 #define MAX_WORD_LENGTH 100
 #define MAX_WORDS 1000
 
 typedef struct {
-    char word[MAX_WORD_LENGTH];
-    int length;
+	char word[MAX_WORD_LENGTH];
+	int length;
 } WordInfo;
-
 
 int compare_words(const void* a, const void* b);
 
