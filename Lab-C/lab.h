@@ -22,5 +22,6 @@ void add_edge(Graph* graph, int from, int to);
 int dfs(Graph* graph, int current, int target, int visited[]);
 int path_exists(Graph* graph, int start, int end);
 int read_graph(const char* filename, Graph* graph);
+void run_all_tests(void);
 
 #endif
