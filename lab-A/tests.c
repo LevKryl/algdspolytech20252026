@@ -1,4 +1,4 @@
-#include "LabA.h"
+#include "labA.h"
 #include <assert.h>
 
 void test_insert_empty_no1() {
