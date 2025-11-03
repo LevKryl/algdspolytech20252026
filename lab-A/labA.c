@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include "LabA.h"
+#include "labA.h"
 
 int compare_words(const void* a, const void* b) {
     const WordInfo* wordA = (const WordInfo*)a;
